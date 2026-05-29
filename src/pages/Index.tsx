@@ -21,28 +21,68 @@ type Release = {
 
 const ARTISTS: Artist[] = [
   {
-    name: "AXEN", genre: "Electronic / Future Bass", img: ARTIST_IMG, tag: "Топ артист",
-    bio: "AXEN — флагманский артист BeatFlow. Пионер Future Bass в России с аудиторией 3M+ слушателей.",
-    tracks: ["Neon Drive", "Phase Signal", "Upward Flux", "Crystal Void"],
-    spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
+    name: "IVAN ZOLO", genre: "Rap / Drill", img: ARTIST_IMG, tag: "Топ артист",
+    bio: "Ivan Zolo — один из самых востребованных рэперов новой волны. Его треки набирают миллионы прослушиваний, а живые выступления собирают аншлаги.",
+    tracks: ["Дорогой", "Без башни", "Холодно", "Мотор", "Горы"],
+    spotify: "https://open.spotify.com/artist/6laDMbINZworODFaAnZsHg",
+    apple: "https://music.apple.com/ru/artist/ivan-zolo/1533717446",
+    vk: "https://vk.com/music/artist/ivan_zolo",
   },
   {
-    name: "VEYRA", genre: "Dark Pop / Synthwave", img: ALBUM_IMG, tag: "Новый релиз",
-    bio: "VEYRA соединяет мрачную эстетику с электронными текстурами. Дебютный EP VOID собрал 500K стримов за первую неделю.",
-    tracks: ["Void", "Glitch", "Mirror Mode", "Darkside"],
-    spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
+    name: "GAZAN", genre: "Trap / Hip-Hop", img: ALBUM_IMG, tag: "Новый альбом",
+    bio: "GAZAN — лирик и мелодист. Каждый его релиз становится событием: хриплый тембр и честные тексты сделали его голосом целого поколения.",
+    tracks: ["Пустота", "Газ", "Небо", "Чёрное", "Молчи"],
+    spotify: "https://open.spotify.com/artist/6CwfuxIqcltXDGjfZsMd9A",
+    apple: "https://music.apple.com/ru/artist/gazan/1513375304",
+    vk: "https://vk.com/music/artist/gazan",
   },
   {
-    name: "ORION K", genre: "Hip-Hop / Trap", img: ARTIST_IMG, tag: "Тур 2026",
-    bio: "ORION K — один из самых ярких голосов современного русского трэпа. В 2026 году выходит в тур по 10 городам России.",
-    tracks: ["Nightcode", "Grid Up", "Orbit", "Signal"],
-    spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
+    name: "9MICE", genre: "Hyperpop / Alt", img: ARTIST_IMG, tag: "Горячий",
+    bio: "9mice — экспериментальный голос русского hyperpop. Её треки — хрупкие и острые одновременно, с миллионами стримов и культовым статусом.",
+    tracks: ["Прости", "Не моя", "Одна", "Летать", "Тихо"],
+    spotify: "https://open.spotify.com/artist/3N0P9yFCGjNGOTsYIMHCFh",
+    apple: "https://music.apple.com/ru/artist/9mice/1535436679",
+    vk: "https://vk.com/music/artist/9mice",
   },
   {
-    name: "SYLA", genre: "R&B / Neo Soul", img: ALBUM_IMG, tag: "Дебют",
-    bio: "SYLA — новое имя в лейбле. Её дебютный EP MIRROR уже называют одним из лучших релизов года по версии нескольких изданий.",
-    tracks: ["Mirror", "Soul Drift", "Warm Static", "Breathe"],
-    spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
+    name: "KAI ANGEL", genre: "Hyperpop / Electro", img: ALBUM_IMG, tag: "Тренд",
+    bio: "Kai Angel — ключевая фигура русского андеграунда и hyperpop сцены. Смешивает электронику, эмо и поп в уникальное звучание.",
+    tracks: ["0KISS0", "Wink Wink", "Ангел", "Dark Room", "Fantasy"],
+    spotify: "https://open.spotify.com/artist/4RCsHCcNSz0mOrDMAbQSP9",
+    apple: "https://music.apple.com/ru/artist/kai-angel/1527780825",
+    vk: "https://vk.com/music/artist/kai_angel",
+  },
+  {
+    name: "MADK1D", genre: "Drill / Trap", img: ARTIST_IMG, tag: "Андеграунд",
+    bio: "MADK1D — один из главных представителей русского дрилла. Мрачные биты и острые тексты привлекли аудиторию со всей страны.",
+    tracks: ["Блок", "Никто", "Тёмный", "Дорога", "Ночь"],
+    spotify: "https://open.spotify.com/search/MADK1D",
+    apple: "https://music.apple.com/ru/search?term=madk1d",
+    vk: "https://vk.com/music/search?q=madk1d",
+  },
+  {
+    name: "MACAN", genre: "Pop / R&B", img: ALBUM_IMG, tag: "Хит",
+    bio: "MACAN — один из самых стримингово успешных русских поп-артистов. Его хиты входят в топы чартов и звучат по всей стране.",
+    tracks: ["Сердце", "Истина", "Нежность", "Родной", "Свет"],
+    spotify: "https://open.spotify.com/artist/3UPzMNBPHCrSMWoXqMkEyT",
+    apple: "https://music.apple.com/ru/artist/macan/1527659680",
+    vk: "https://vk.com/music/artist/macan",
+  },
+  {
+    name: "ОБЛЕДЕНЕНИЕ", genre: "Indie / Shoegaze", img: ARTIST_IMG, tag: "Культ",
+    bio: "Обледенение — культовый проект русской инди-сцены. Мечтательный звук и атмосферные тексты собрали преданную аудиторию.",
+    tracks: ["Лёд", "Зима", "Туман", "Снег", "Север"],
+    spotify: "https://open.spotify.com/search/%D0%BE%D0%B1%D0%BB%D0%B5%D0%B4%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5",
+    apple: "https://music.apple.com/ru/search?term=%D0%BE%D0%B1%D0%BB%D0%B5%D0%B4%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5",
+    vk: "https://vk.com/music/search?q=%D0%BE%D0%B1%D0%BB%D0%B5%D0%B4%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5",
+  },
+  {
+    name: "PHARAOH", genre: "Cloud Rap / Trap", img: ALBUM_IMG, tag: "Легенда",
+    bio: "PHARAOH — пионер русского cloud rap. Основал целое направление в отечественной музыке и вдохновил тысячи артистов.",
+    tracks: ["Гламурный мусор", "Айс", "Цепи", "Фантом", "Дрим"],
+    spotify: "https://open.spotify.com/artist/2dY9GJolP2FdFhSEUvhIAF",
+    apple: "https://music.apple.com/ru/artist/pharaoh/982568812",
+    vk: "https://vk.com/music/artist/pharaoh",
   },
 ];
 
@@ -282,7 +322,7 @@ export default function Index() {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {ARTISTS.map((a, i) => (
               <div key={i} onClick={() => setSelectedArtist(a)} className="group relative rounded-2xl overflow-hidden cursor-pointer card-hover bg-nexo-darkest border border-white/5">
                 <div className="aspect-[3/4] relative">
