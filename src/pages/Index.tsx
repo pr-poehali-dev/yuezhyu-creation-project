@@ -22,7 +22,7 @@ type Release = {
 const ARTISTS: Artist[] = [
   {
     name: "AXEN", genre: "Electronic / Future Bass", img: ARTIST_IMG, tag: "Топ артист",
-    bio: "AXEN — флагманский артист NEXOVIA. Пионер Future Bass в России с аудиторией 3M+ слушателей.",
+    bio: "AXEN — флагманский артист BeatFlow. Пионер Future Bass в России с аудиторией 3M+ слушателей.",
     tracks: ["Neon Drive", "Phase Signal", "Upward Flux", "Crystal Void"],
     spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
   },
@@ -47,12 +47,12 @@ const ARTISTS: Artist[] = [
 ];
 
 const RELEASES: Release[] = [
-  { title: "PHASE ONE", artist: "AXEN", year: "2026", type: "Альбом", img: ALBUM_IMG, isNew: true, desc: "Дебютный полноформатный альбом AXEN — 12 треков о движении, прогрессе и будущем.", tracks: ["Neon Drive", "Phase Signal", "Upward Flux", "Crystal Void", "Horizon", "Deep Run", "Echo State", "Forward", "Cascade", "Open Sky", "Arrival", "Phase One"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
-  { title: "VOID", artist: "VEYRA", year: "2026", type: "EP", img: ARTIST_IMG, isNew: true, desc: "Мрачный и атмосферный EP от VEYRA — 4 трека на границе dark pop и synthwave.", tracks: ["Void", "Glitch", "Mirror Mode", "Darkside"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
-  { title: "NIGHTCODE", artist: "ORION K", year: "2025", type: "Сингл", img: ALBUM_IMG, isNew: false, desc: "Хитовый сингл ORION K — манифест нового поколения трэпа.", tracks: ["Nightcode"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
-  { title: "MIRROR", artist: "SYLA", year: "2025", type: "EP", img: ARTIST_IMG, isNew: false, desc: "Дебютный EP SYLA — нежный и глубокий взгляд на современный R&B.", tracks: ["Mirror", "Soul Drift", "Warm Static", "Breathe"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
-  { title: "AURORA", artist: "AXEN", year: "2025", type: "Альбом", img: ALBUM_IMG, isNew: false, desc: "Второй альбом AXEN — звуковое путешествие через рассвет цифровой эпохи.", tracks: ["Aurora Rise", "First Light", "Skyline", "Surge", "Bloom", "Infinite", "Pale Signal", "Dawn", "New Chapter"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
-  { title: "GRID", artist: "VEYRA", year: "2024", type: "Сингл", img: ARTIST_IMG, isNew: false, desc: "Дебютный сингл VEYRA, который открыл новое звучание для лейбла.", tracks: ["Grid"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
+  { title: "GNX", artist: "Kendrick Lamar", year: "2024", type: "Альбом", img: ALBUM_IMG, isNew: true, desc: "Внезапный альбом-сюрприз Кендрика Ламара. 12 треков, записанных в тайне — один из самых обсуждаемых релизов 2024 года.", tracks: ["wacced out murals", "squabble up", "luther", "man at the garden", "peekaboo", "hey now", "reunitedanditfeelssogood", "tv off", "dodger blue", "le mer", "heart pt. 6", "gnx"], spotify: "https://open.spotify.com/album/5JjnoGdSBFgfHEQvJAHOlV", apple: "https://music.apple.com/album/gnx/1781748571", yandex: "https://music.yandex.ru" },
+  { title: "SHORT N' SWEET", artist: "Sabrina Carpenter", year: "2024", type: "Альбом", img: ARTIST_IMG, isNew: true, desc: "Прорывной альбом Сабрины Карпентер с хитами Espresso и Please Please Please. Самый продаваемый поп-альбом 2024 года.", tracks: ["Taste", "Espresso", "Please Please Please", "Coincidence", "Slim Pickins", "Bed Chem", "Juno", "Dumb & Poetic", "Good Graces", "Steal The Show", "Fountain", "Please Don't Cry"], spotify: "https://open.spotify.com/album/4pCiEXZJhTRbPiIWCdBmCW", apple: "https://music.apple.com/album/short-n-sweet/1744901977", yandex: "https://music.yandex.ru" },
+  { title: "HIT ME HARD AND SOFT", artist: "Billie Eilish", year: "2024", type: "Альбом", img: ALBUM_IMG, isNew: false, desc: "Третий студийный альбом Билли Айлиш — глубокий, уязвимый и зрелый. Критики называют его лучшей работой артистки.", tracks: ["SKINNY", "LUNCH", "CHIHIRO", "BIRDS OF A FEATHER", "WILDFLOWER", "THE GREATEST", "L'AMOUR DE MA VIE", "THE DINER", "BITTERSUITE", "BLUE"], spotify: "https://open.spotify.com/album/7aJuiYOpq8yFMDEGnDJQCN", apple: "https://music.apple.com/album/hit-me-hard-and-soft/1740095940", yandex: "https://music.yandex.ru" },
+  { title: "CHROMAKOPIA", artist: "Tyler, the Creator", year: "2024", type: "Альбом", img: ARTIST_IMG, isNew: false, desc: "Седьмой студийный альбом Тайлера — философское путешествие через самоопределение и взросление.", tracks: ["St. Chroma", "Rah Tah Tah", "Noid", "Darling I", "Like Him", "Balloon", "Sticky", "Judge Judy", "Thought I Was Dead", "I Killed You", "Take Your Mask Off", "Tomorrow"], spotify: "https://open.spotify.com/album/2fqoAPhBFRtGrRcpEtQBDv", apple: "https://music.apple.com/album/chromakopia/1773111672", yandex: "https://music.yandex.ru" },
+  { title: "THE TORTURED POETS DEPARTMENT", artist: "Taylor Swift", year: "2024", type: "Альбом", img: ALBUM_IMG, isNew: false, desc: "11-й альбом Тейлор Свифт. Вышел одновременно с двойным изданием The Anthology — 31 трек. Побил все стриминговые рекорды.", tracks: ["Fortnight", "The Tortured Poets Department", "My Boy Only Breaks His Favorite Toys", "Down Bad", "So Long, London", "But Daddy I Love Him", "Fresh Out the Slammer", "Florida!!!", "Guilty as Sin?", "Who's Afraid of Little Old Me?"], spotify: "https://open.spotify.com/album/1Mo4aZ8pdAd5-oyfDQ5WeI", apple: "https://music.apple.com/album/the-tortured-poets-department/1736268210", yandex: "https://music.yandex.ru" },
+  { title: "ETERNAL SUNSHINE", artist: "Ariana Grande", year: "2024", type: "Альбом", img: ARTIST_IMG, isNew: false, desc: "Седьмой студийный альбом Арианы Гранде — меланхоличный и танцевальный. Дебютировал на #1 в 40+ странах.", tracks: ["intro (end of the world)", "bye", "don't wanna break up again", "Saturn Returns Interlude", "eternal sunshine", "supernatural", "true story", "the boy is mine", "yes, and?", "we can't be friends", "i wish i hated you", "imperfect for you", "ordinary things"], spotify: "https://open.spotify.com/album/5EBFRoMnOGEBIF0QHxNXfY", apple: "https://music.apple.com/album/eternal-sunshine/1729824048", yandex: "https://music.yandex.ru" },
 ];
 
 const SERVICES = [
@@ -65,16 +65,16 @@ const SERVICES = [
 ];
 
 const NEWS = [
-  { date: "28 мая 2026", tag: "Событие", title: "NEXOVIA подписала соглашение с Яндекс Музыкой", preview: "Стратегическое партнёрство открывает новые возможности для наших артистов на русскоязычном рынке." },
-  { date: "15 мая 2026", tag: "Релиз", title: "AXEN выпускает дебютный альбом PHASE ONE", preview: "Долгожданный альбом из 12 треков уже доступен на всех платформах. Слушайте прямо сейчас." },
-  { date: "3 мая 2026", tag: "Тур", title: "ORION K — тур по городам России", preview: "Концерты в Москве, Санкт-Петербурге, Екатеринбурге и Новосибирске. Билеты поступили в продажу." },
+  { date: "28 мая 2026", tag: "Событие", title: "BeatFlow подписала соглашение с Яндекс Музыкой", preview: "Стратегическое партнёрство открывает новые возможности для наших артистов на русскоязычном рынке." },
+  { date: "20 мая 2026", tag: "Релиз", title: "Kendrick Lamar выпустил сюрприз-альбом GNX", preview: "12 треков, записанных в тайне — один из самых обсуждаемых релизов года. Уже на всех платформах." },
+  { date: "10 мая 2026", tag: "Чарт", title: "Sabrina Carpenter — #1 в 42 странах с SHORT N' SWEET", preview: "Альбом побил рекорды стриминга и закрепился на первой строчке Billboard Hot 100 на 6 недель." },
 ];
 
 const STATS = [
-  { value: "50+", label: "Артистов" },
-  { value: "500+", label: "Релизов" },
-  { value: "150+", label: "Платформ" },
-  { value: "10M+", label: "Слушателей" },
+  { value: "67+", label: "Артистов" },
+  { value: "777+", label: "Релизов" },
+  { value: "122+", label: "Платформ" },
+  { value: "69M+", label: "Слушателей" },
 ];
 
 export default function Index() {
@@ -103,10 +103,10 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo("hero")}>
             <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-nexo-cyan via-nexo-blue to-nexo-violet flex items-center justify-center glow-cyan">
-              <span className="font-sora font-bold text-nexo-dark text-sm">N</span>
+              <span className="font-sora font-bold text-nexo-dark text-sm">B</span>
             </div>
             <div>
-              <div className="font-sora font-bold text-white text-lg tracking-widest">NEXOVIA</div>
+              <div className="font-sora font-bold text-white text-lg tracking-widest">BeatFlow</div>
               <div className="text-nexo-cyan text-[9px] tracking-[0.2em] -mt-1">движение. прогресс. будущее.</div>
             </div>
           </div>
@@ -175,9 +175,8 @@ export default function Index() {
             </div>
 
             <h1 className="animate-fade-in-up opacity-0 delay-200 font-sora font-black text-6xl md:text-8xl leading-none tracking-tight mb-6">
-              <span className="text-white">НЕ</span>
-              <span className="gradient-text text-glow-cyan">XO</span>
-              <span className="text-white">VIA</span>
+              <span className="text-white">Beat</span>
+              <span className="gradient-text text-glow-cyan">Flow</span>
             </h1>
 
             <p className="animate-fade-in-up opacity-0 delay-300 text-xl md:text-2xl text-white/50 font-sora font-light tracking-[0.15em] mb-4">
@@ -236,7 +235,7 @@ export default function Index() {
                 <span className="gradient-text">звуковое будущее</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-6 font-inter">
-                NEXOVIA — независимый музыкальный лейбл, основанный в 2020 году. Мы объединяем артистов с визионерским взглядом, которые хотят двигаться вперёд без компромиссов.
+                BeatFlow — независимый музыкальный лейбл, основанный в 2020 году. Мы объединяем артистов с визионерским взглядом, которые хотят двигаться вперёд без компромиссов.
               </p>
               <p className="text-white/60 text-lg leading-relaxed mb-10 font-inter">
                 Наша миссия: создавать среду, где талант встречает технологии, а музыка становится движущей силой перемен.
@@ -256,7 +255,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-nexo-dark/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 p-5 bg-nexo-dark/80 backdrop-blur rounded-xl border border-white/10">
                   <div className="font-sora font-bold text-white text-lg mb-1">Двигайся. Создавай. Опережай.</div>
-                  <div className="text-nexo-cyan text-sm font-inter">— слоган NEXOVIA</div>
+                  <div className="text-nexo-cyan text-sm font-inter">— слоган BeatFlow</div>
                 </div>
               </div>
               <div className="absolute -top-6 -right-6 w-40 h-40 rounded-full blur-[60px] opacity-30"
@@ -438,7 +437,7 @@ export default function Index() {
         <div className="max-w-4xl mx-auto text-center relative">
           <div className="font-sora font-black text-5xl md:text-7xl text-white mb-6 leading-tight">
             Готов стать<br />
-            <span className="gradient-text text-glow-cyan">частью NEXOVIA?</span>
+            <span className="gradient-text text-glow-cyan">частью BeatFlow?</span>
           </div>
           <p className="text-white/60 text-xl mb-10 font-inter max-w-xl mx-auto">
             Отправь нам своё демо — мы слушаем каждый трек. Твой звук может изменить всё.
@@ -556,10 +555,10 @@ export default function Index() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-nexo-cyan via-nexo-blue to-nexo-violet flex items-center justify-center">
-              <span className="font-sora font-bold text-nexo-dark text-xs">N</span>
+              <span className="font-sora font-bold text-nexo-dark text-xs">B</span>
             </div>
             <div>
-              <span className="font-sora font-bold text-white tracking-widest">NEXOVIA</span>
+              <span className="font-sora font-bold text-white tracking-widest">BeatFlow</span>
               <span className="text-nexo-cyan text-xs ml-2 opacity-60">движение. прогресс. будущее.</span>
             </div>
           </div>
@@ -568,7 +567,7 @@ export default function Index() {
               <button key={l} className="text-white/30 hover:text-white/60 text-xs font-inter transition-colors">{l}</button>
             ))}
           </div>
-          <div className="text-white/20 text-xs font-inter">© 2026 NEXOVIA. Все права защищены.</div>
+          <div className="text-white/20 text-xs font-inter">© 2026 BeatFlow. Все права защищены.</div>
         </div>
       </footer>
 
