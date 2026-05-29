@@ -7,20 +7,52 @@ const ALBUM_IMG = "https://cdn.poehali.dev/projects/ed9167de-5b10-4779-bf20-9a32
 
 const NAV_LINKS = ["О лейбле", "Артисты", "Релизы", "Сервисы", "Новости", "Контакты"];
 
-const ARTISTS = [
-  { name: "AXEN", genre: "Electronic / Future Bass", img: ARTIST_IMG, tag: "Топ артист" },
-  { name: "VEYRA", genre: "Dark Pop / Synthwave", img: ALBUM_IMG, tag: "Новый релиз" },
-  { name: "ORION K", genre: "Hip-Hop / Trap", img: ARTIST_IMG, tag: "Тур 2026" },
-  { name: "SYLA", genre: "R&B / Neo Soul", img: ALBUM_IMG, tag: "Дебют" },
+type Artist = {
+  name: string; genre: string; img: string; tag: string;
+  bio: string; tracks: string[];
+  spotify: string; apple: string; vk: string;
+};
+
+type Release = {
+  title: string; artist: string; year: string; type: string; img: string; isNew: boolean;
+  desc: string; tracks: string[];
+  spotify: string; apple: string; yandex: string;
+};
+
+const ARTISTS: Artist[] = [
+  {
+    name: "AXEN", genre: "Electronic / Future Bass", img: ARTIST_IMG, tag: "Топ артист",
+    bio: "AXEN — флагманский артист NEXOVIA. Пионер Future Bass в России с аудиторией 3M+ слушателей.",
+    tracks: ["Neon Drive", "Phase Signal", "Upward Flux", "Crystal Void"],
+    spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
+  },
+  {
+    name: "VEYRA", genre: "Dark Pop / Synthwave", img: ALBUM_IMG, tag: "Новый релиз",
+    bio: "VEYRA соединяет мрачную эстетику с электронными текстурами. Дебютный EP VOID собрал 500K стримов за первую неделю.",
+    tracks: ["Void", "Glitch", "Mirror Mode", "Darkside"],
+    spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
+  },
+  {
+    name: "ORION K", genre: "Hip-Hop / Trap", img: ARTIST_IMG, tag: "Тур 2026",
+    bio: "ORION K — один из самых ярких голосов современного русского трэпа. В 2026 году выходит в тур по 10 городам России.",
+    tracks: ["Nightcode", "Grid Up", "Orbit", "Signal"],
+    spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
+  },
+  {
+    name: "SYLA", genre: "R&B / Neo Soul", img: ALBUM_IMG, tag: "Дебют",
+    bio: "SYLA — новое имя в лейбле. Её дебютный EP MIRROR уже называют одним из лучших релизов года по версии нескольких изданий.",
+    tracks: ["Mirror", "Soul Drift", "Warm Static", "Breathe"],
+    spotify: "https://open.spotify.com", apple: "https://music.apple.com", vk: "https://vk.com/music",
+  },
 ];
 
-const RELEASES = [
-  { title: "PHASE ONE", artist: "AXEN", year: "2026", type: "Альбом", img: ALBUM_IMG, isNew: true },
-  { title: "VOID", artist: "VEYRA", year: "2026", type: "EP", img: ARTIST_IMG, isNew: true },
-  { title: "NIGHTCODE", artist: "ORION K", year: "2025", type: "Сингл", img: ALBUM_IMG, isNew: false },
-  { title: "MIRROR", artist: "SYLA", year: "2025", type: "EP", img: ARTIST_IMG, isNew: false },
-  { title: "AURORA", artist: "AXEN", year: "2025", type: "Альбом", img: ALBUM_IMG, isNew: false },
-  { title: "GRID", artist: "VEYRA", year: "2024", type: "Сингл", img: ARTIST_IMG, isNew: false },
+const RELEASES: Release[] = [
+  { title: "PHASE ONE", artist: "AXEN", year: "2026", type: "Альбом", img: ALBUM_IMG, isNew: true, desc: "Дебютный полноформатный альбом AXEN — 12 треков о движении, прогрессе и будущем.", tracks: ["Neon Drive", "Phase Signal", "Upward Flux", "Crystal Void", "Horizon", "Deep Run", "Echo State", "Forward", "Cascade", "Open Sky", "Arrival", "Phase One"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
+  { title: "VOID", artist: "VEYRA", year: "2026", type: "EP", img: ARTIST_IMG, isNew: true, desc: "Мрачный и атмосферный EP от VEYRA — 4 трека на границе dark pop и synthwave.", tracks: ["Void", "Glitch", "Mirror Mode", "Darkside"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
+  { title: "NIGHTCODE", artist: "ORION K", year: "2025", type: "Сингл", img: ALBUM_IMG, isNew: false, desc: "Хитовый сингл ORION K — манифест нового поколения трэпа.", tracks: ["Nightcode"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
+  { title: "MIRROR", artist: "SYLA", year: "2025", type: "EP", img: ARTIST_IMG, isNew: false, desc: "Дебютный EP SYLA — нежный и глубокий взгляд на современный R&B.", tracks: ["Mirror", "Soul Drift", "Warm Static", "Breathe"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
+  { title: "AURORA", artist: "AXEN", year: "2025", type: "Альбом", img: ALBUM_IMG, isNew: false, desc: "Второй альбом AXEN — звуковое путешествие через рассвет цифровой эпохи.", tracks: ["Aurora Rise", "First Light", "Skyline", "Surge", "Bloom", "Infinite", "Pale Signal", "Dawn", "New Chapter"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
+  { title: "GRID", artist: "VEYRA", year: "2024", type: "Сингл", img: ARTIST_IMG, isNew: false, desc: "Дебютный сингл VEYRA, который открыл новое звучание для лейбла.", tracks: ["Grid"], spotify: "https://open.spotify.com", apple: "https://music.apple.com", yandex: "https://music.yandex.ru" },
 ];
 
 const SERVICES = [
@@ -49,6 +81,8 @@ export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [playingId, setPlayingId] = useState<number | null>(null);
+  const [selectedArtist, setSelectedArtist] = useState<Artist | null>(null);
+  const [selectedRelease, setSelectedRelease] = useState<Release | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -251,7 +285,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {ARTISTS.map((a, i) => (
-              <div key={i} className="group relative rounded-2xl overflow-hidden cursor-pointer card-hover bg-nexo-darkest border border-white/5">
+              <div key={i} onClick={() => setSelectedArtist(a)} className="group relative rounded-2xl overflow-hidden cursor-pointer card-hover bg-nexo-darkest border border-white/5">
                 <div className="aspect-[3/4] relative">
                   <img src={a.img} alt={a.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-nexo-dark via-nexo-dark/20 to-transparent" />
@@ -296,6 +330,7 @@ export default function Index() {
                 className="group relative rounded-xl overflow-hidden cursor-pointer card-hover"
                 onMouseEnter={() => setPlayingId(i)}
                 onMouseLeave={() => setPlayingId(null)}
+                onClick={() => setSelectedRelease(r)}
               >
                 <div className="aspect-square relative">
                   <img src={r.img} alt={r.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -443,9 +478,9 @@ export default function Index() {
 
               <div className="space-y-6">
                 {[
-                  { icon: "Mail", label: "Email", value: "info@nexovia.com" },
-                  { icon: "Phone", label: "Телефон", value: "+7 (900) 000-00-00" },
-                  { icon: "MapPin", label: "Офис", value: "Москва, Россия" },
+                  { icon: "Mail", label: "Email", value: "musikedishenprosupermegotop777_67@gmail.com", href: "mailto:musikedishenprosupermegotop777_67@gmail.com" },
+                  { icon: "Phone", label: "Телефон", value: "+7 (961) 985-90-32", href: "tel:+79619859032" },
+                  { icon: "MapPin", label: "Офис", value: "Москва, Россия", href: null },
                 ].map((c, i) => (
                   <div key={i} className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-xl bg-nexo-cyan/10 border border-nexo-cyan/20 flex items-center justify-center flex-shrink-0">
@@ -453,7 +488,11 @@ export default function Index() {
                     </div>
                     <div>
                       <div className="text-white/40 text-xs font-inter mb-0.5">{c.label}</div>
-                      <div className="text-white font-sora font-medium">{c.value}</div>
+                      {c.href ? (
+                        <a href={c.href} className="text-white font-sora font-medium hover:text-nexo-cyan transition-colors duration-200 break-all">{c.value}</a>
+                      ) : (
+                        <div className="text-white font-sora font-medium">{c.value}</div>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -532,6 +571,112 @@ export default function Index() {
           <div className="text-white/20 text-xs font-inter">© 2026 NEXOVIA. Все права защищены.</div>
         </div>
       </footer>
+
+      {/* МОДАЛ: АРТИСТ */}
+      {selectedArtist && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={() => setSelectedArtist(null)}>
+          <div className="absolute inset-0 bg-nexo-dark/90 backdrop-blur-xl" />
+          <div className="relative w-full max-w-2xl bg-nexo-navy border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
+            onClick={e => e.stopPropagation()}>
+            <div className="relative h-56">
+              <img src={selectedArtist.img} alt={selectedArtist.name} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-nexo-navy via-nexo-navy/40 to-transparent" />
+              <button onClick={() => setSelectedArtist(null)}
+                className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/40 backdrop-blur flex items-center justify-center text-white/70 hover:text-white transition-colors">
+                <Icon name="X" size={18} />
+              </button>
+              <div className="absolute bottom-5 left-6">
+                <span className="bg-nexo-cyan/90 text-nexo-dark font-sora font-bold text-xs px-3 py-1 rounded-full mb-2 inline-block">{selectedArtist.tag}</span>
+                <div className="font-sora font-black text-white text-4xl">{selectedArtist.name}</div>
+                <div className="text-white/50 text-sm font-inter">{selectedArtist.genre}</div>
+              </div>
+            </div>
+            <div className="p-6">
+              <p className="text-white/70 font-inter text-sm leading-relaxed mb-5">{selectedArtist.bio}</p>
+              <div className="mb-5">
+                <div className="text-white/40 text-xs font-sora tracking-widest mb-3">ТРЕКИ</div>
+                <div className="grid grid-cols-2 gap-2">
+                  {selectedArtist.tracks.map((t, i) => (
+                    <div key={i} className="flex items-center gap-2 bg-white/5 rounded-lg px-3 py-2 text-white/70 text-sm font-inter hover:bg-nexo-cyan/10 hover:text-nexo-cyan transition-colors cursor-pointer">
+                      <Icon name="Music2" size={12} className="text-nexo-cyan/60" />
+                      {t}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <a href={selectedArtist.spotify} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-[#1DB954] text-white font-sora font-semibold text-sm px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity">
+                  <Icon name="Music" size={16} /> Spotify
+                </a>
+                <a href={selectedArtist.apple} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-sora font-semibold text-sm px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity">
+                  <Icon name="Music2" size={16} /> Apple Music
+                </a>
+                <a href={selectedArtist.vk} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-[#2787F5] text-white font-sora font-semibold text-sm px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity">
+                  <Icon name="Headphones" size={16} /> ВКонтакте
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* МОДАЛ: РЕЛИЗ */}
+      {selectedRelease && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={() => setSelectedRelease(null)}>
+          <div className="absolute inset-0 bg-nexo-dark/90 backdrop-blur-xl" />
+          <div className="relative w-full max-w-2xl bg-nexo-navy border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
+            onClick={e => e.stopPropagation()}>
+            <div className="relative h-48">
+              <img src={selectedRelease.img} alt={selectedRelease.title} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-nexo-navy via-nexo-navy/50 to-transparent" />
+              <button onClick={() => setSelectedRelease(null)}
+                className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/40 backdrop-blur flex items-center justify-center text-white/70 hover:text-white transition-colors">
+                <Icon name="X" size={18} />
+              </button>
+              <div className="absolute bottom-5 left-6 flex items-end gap-4">
+                <img src={selectedRelease.img} alt="" className="w-16 h-16 rounded-xl border-2 border-nexo-cyan/40 object-cover" />
+                <div>
+                  {selectedRelease.isNew && <span className="bg-nexo-cyan text-nexo-dark font-sora font-bold text-[10px] px-2 py-0.5 rounded-full mb-1 inline-block">NEW</span>}
+                  <div className="font-sora font-black text-white text-3xl">{selectedRelease.title}</div>
+                  <div className="text-white/50 text-sm font-inter">{selectedRelease.artist} · {selectedRelease.type} · {selectedRelease.year}</div>
+                </div>
+              </div>
+            </div>
+            <div className="p-6">
+              <p className="text-white/70 font-inter text-sm leading-relaxed mb-5">{selectedRelease.desc}</p>
+              <div className="mb-5">
+                <div className="text-white/40 text-xs font-sora tracking-widest mb-3">ТРЕКЛИСТ</div>
+                <div className="space-y-1.5">
+                  {selectedRelease.tracks.map((t, i) => (
+                    <div key={i} className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors cursor-pointer group/track">
+                      <span className="text-white/20 text-xs w-5 text-right font-inter">{i + 1}</span>
+                      <Icon name="Music2" size={12} className="text-nexo-cyan/50 group-hover/track:text-nexo-cyan transition-colors" />
+                      <span className="text-white/70 text-sm font-inter group-hover/track:text-white transition-colors">{t}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <a href={selectedRelease.spotify} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-[#1DB954] text-white font-sora font-semibold text-sm px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity">
+                  <Icon name="Music" size={16} /> Spotify
+                </a>
+                <a href={selectedRelease.apple} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-sora font-semibold text-sm px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity">
+                  <Icon name="Music2" size={16} /> Apple Music
+                </a>
+                <a href={selectedRelease.yandex} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-[#FFCC00] text-black font-sora font-semibold text-sm px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity">
+                  <Icon name="Headphones" size={16} /> Яндекс Музыка
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
